@@ -10,9 +10,9 @@
 {% row %}
     <div class="col">
         {{ post.content|safe }}
+        {% include "blog/post-comments.html" %}
     </div>
 {% endrow %}
-<!-- existing code here -->
 {% row %}
     {% col %}
         {% recent_posts post %}
